@@ -6,5 +6,5 @@ parcel src/index.html
 
 # build
 ```
-yarn build
+parcel build src/index.html --no-minify --public-url ./
 ```

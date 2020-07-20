@@ -64,3 +64,8 @@ $(document).on('keypress', (e) => {
         }
     }
 })
+
+
+$(".globalHeader").on('keypress', (e) => {
+    e.stopPropagation()
+})
