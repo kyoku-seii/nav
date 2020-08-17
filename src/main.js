@@ -1,6 +1,6 @@
 const $siteList = $('.siteList')
 const $lastLi = $siteList.find('li.last')
-const cash = sessionStorage.getItem('cash')
+const cash = localStorage.getItem('cash')
 const cashObject = JSON.parse(cash)
 const hashMap = cashObject || [
     { logo: 'A', url: 'https://www.acfun.cn' },
@@ -53,7 +53,7 @@ $('.addButton').on('click', () => {
 
 window.onbeforeunload = () => {
     const string = JSON.stringify(hashMap)
-    window.sessionStorage.setItem('cash', string)
+    window.localStorage.setItem('cash', string)
 }
 
 $(document).on('keypress', (e) => {
