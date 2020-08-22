@@ -85,11 +85,14 @@ body{
 }
 
 @media(min-width:500px){
+    .siteList {
+        justify-content: space-around;
+    }
     .siteList > li{
         margin-right:25px;
-        justify-content: flex-start;
     }
 }
+
 .siteList .site{
     width: 160px;
     display: flex;
